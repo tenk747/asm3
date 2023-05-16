@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+#nav-bar {
+  text-align: center;
+}
+
+/* ------BANNER------*/
+
+.banner-img {
+  filter: brightness(50%);
+  width: 100%;
+}
+.name {
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.name h1 {
+  font-size: 2rem;
+}
+
+/* ------THANH NAVBAR------ */
+
+.container-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.nav-icon {
+  color: rgb(40, 179, 204);
+}
+.nav {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  border-right: solid 1px rgb(247, 247, 247);
+  border-left: solid 1px rgb(247, 247, 247);
+  margin: 0;
+}
+.img-avatar {
+  transform: scale(7);
+  border-radius: 50%;
+  border: solid white 1px;
+}
+.nav-img {
+  flex-grow: 0.3;
+}
+
+/* ------MỤC TIÊU NGHỀ NGHIỆP - THÔNG TIN CÁ NHÂN ------*/
+
+#about {
+  line-height: 1.8;
+}
+#target {
+  background-color: #f7f7f7;
+  padding: 2rem;
+}
+#personal-info {
+  background-color: #ecececbb;
+  padding: 2rem;
+}
+#personal-info ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.ttcn-icon {
+  color: rgb(40, 179, 204);
+  font-size: 16px;
+  padding: 2px;
+}
+
+/* ------THÔNG TIN NGHỀ NGHIỆP------ */
+
+#job-info {
+  display: flex;
+  justify-content: center;
+}
+#job-info .container {
+  width: 70%;
+}
+
+/*kinh nghiệm,học vấn,hoạt động*/
+#job-info .container .ttnn-container {
+  width: 100%;
+  line-height: 1.5;
+  border: solid 1px rgb(221, 220, 220);
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 80px auto;
+  justify-items: start;
+  align-items: start;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#job-info .container div ul {
+  padding: 35px;
+}
+#job-info .container div ul li::marker {
+  font-size: 20px;
+  color: rgb(40, 179, 204);
+}
+.ttnn-icon {
+  font-size: 30px;
+  padding-top: 10px;
+}
+#job-info .container div h1 {
+  padding: 20px 0 20px 20px;
+}
+.ttnn-time {
+  background-color: rgb(40, 179, 204);
+  padding: 2px 12px 2px 12px;
+  border-radius: 7px;
+}
+/*sở thích*/
+.sothich {
+  display: grid;
+  grid-column: 1/3;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 10px;
+  padding-top: 20px;
+}
+.sothich-icon {
+  color: rgb(40, 179, 204);
+  padding: 10px;
+  border: solid 1px rgb(40, 179, 204);
+  border-radius: 50%;
+}
+/* ngôn ngữ,kỹ năng */
+.ngonngu,
+.kynang {
+  grid-column: 1/3;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.blue {
+  display: inline-block;
+  background-color: rgb(40, 179, 204);
+  height: 2px;
+  width: 45px;
+  margin-right: 10px;
+}
+.grey {
+  display: inline-block;
+  background-color: rgb(230, 230, 230);
+  height: 2px;
+  width: 45px;
+  margin-right: 10px;
+}
+
+/* -----CHỨNG CHỈ-GIẢI THƯỞNG----- */
+
+#certificate .container {
+  width: 70%;
+}
+
+.chungchi div {
+  font-size: 13px;
+}
+/* repondsive riêng phần chứng chỉ cho màn laptop để k bị tràn văn bản */
+@media screen and (min-width: 992px) {
+  .chungchi div * {
+    height: 75px;
+  }
+  .chungchi2 {
+    padding-left: 2rem;
+  }
+}
+/* -----DỰ ÁN----- */
+
+#project .container {
+  width: 70%;
+}
+.columns {
+  border: solid rgb(230, 230, 230) 1px;
+  margin-bottom: 3rem;
+}
+.columns a {
+  text-decoration: none;
+  color: black;
+}
+.duan {
+  padding-top: 30px;
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  align-items: stretch;
+  gap: 1rem;
+}
+.columns p {
+  padding: 0;
+}
+.duan-row1,
+.duan-row2 {
+  border-top: solid 1px rgb(230, 230, 230);
+  padding: 20px 15px 20px 15px;
+}
+.duan-row2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.duan-mota {
+  border-top: solid 1px rgb(230, 230, 230);
+  justify-content: space-between;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.nam2021 {
+  background-color: rgb(40, 179, 204);
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+/* ------FOOTER ------ */
+
+#footer .container {
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  text-align: center;
+}
+#footer .container a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+}
+.footer-icon {
+  font-size: 1rem;
+  color: rgb(40, 179, 204);
+}
+
+/* class ẩn các thông tin , hiện ra khi cần để làm js */
+.hidden {
+  display: none;
+}
+.anttnn {
+  grid-column: 1/3;
+}

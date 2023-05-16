@@ -1,0 +1,24 @@
+@media screen and (max-width: 576px) {
+  .container-nav {
+    flex-direction: column;
+  }
+  #job-info .container {
+    width: 100%;
+  }
+  .chungchi {
+    border-bottom: solid 2px #d6c08d;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  /* layout phần dự án  */
+  #project .container {
+    width: 70%;
+  }
+  .columns {
+    border: solid rgb(230, 230, 230) 1px;
+  }
+  .duan {
+    display: block;
+  }
+}

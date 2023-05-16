@@ -1,0 +1,42 @@
+/* màn hình mobile và tablet  */
+@media screen and (max-width: 992px) {
+  .chungchi-img {
+    width: 90%;
+  }
+  .duan {
+    gap: 1rem;
+  }
+}
+
+/* màn hình tablet và laptop */
+@media screen and (min-width: 576px) {
+  /* Border cho phần chứng chỉ từ màn hình tablet trở lên */
+
+  .chungchi2 {
+    border-left: 2px solid #d6c08d;
+    padding-left: 2.5rem;
+  }
+  .row2 {
+    border-top: #d6c08d solid 2px;
+  }
+}
+/* chỉ màn hình tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  #project .container {
+    width: 90%;
+  }
+  .duan {
+    gap: 0.5rem;
+  }
+  .duan-mota div {
+    padding: 2px;
+  }
+  .duan-row2 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .nam2021 {
+    grid-row: 1/3;
+  }
+}

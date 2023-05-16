@@ -1,0 +1,91 @@
+/* CSS CHO TRANG WEB THÔNG TIN DỰ ÁN */
+
+/* màn hình mobile và tablet */
+@media screen and (max-width: 992px) {
+  .goal-row div:first-child,
+  .primary .container div:first-child,
+  .team .container div:first-child {
+    text-align: center;
+  }
+  .primary,
+  .team {
+    border-top: solid 20px blue;
+  }
+  .right {
+    background-color: aqua;
+    border-top: none !important;
+    border-left: 30px solid blue !important;
+  }
+}
+
+/* màn hình laptop */
+@media screen and (min-width: 992px) {
+  body {
+    padding: 20px auto;
+  }
+  body div {
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0;
+  }
+  .goal-row {
+    justify-content: space-evenly;
+  }
+  .primary,
+  .team {
+    border-left: 20px solid blue;
+  }
+}
+
+* {
+  margin: 0;
+}
+.goals,
+.team,
+.scope,
+.primary,
+.timeline {
+  background-color: azure;
+}
+
+h1 {
+  color: blue;
+  padding: 20px;
+  border-bottom: 2px solid rgb(196, 196, 196);
+}
+h2 {
+  font-size: medium;
+  font-weight: bolder;
+}
+.icon {
+  font-size: 2rem;
+}
+
+.number {
+  font-size: larger;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 2.7rem;
+  margin-top: 20px;
+}
+.timeline .container div div:last-child {
+  border-bottom: 1px dashed rgb(1, 197, 197);
+}
+.left {
+  margin: 0;
+  border: 20px solid blue;
+  border-left: 30px solid blue;
+}
+.right {
+  margin: 0;
+  padding: 0;
+  border: solid 20px blue;
+  border-left: none;
+}
+.left > div:last-child {
+  border-top: 20px solid blue;
+}
